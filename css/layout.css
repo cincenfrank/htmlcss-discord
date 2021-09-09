@@ -1,0 +1,54 @@
+.view-container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col {
+  float: left;
+}
+
+.col-1x6 {
+  width: calc(100% / 6);
+  height: 100%;
+}
+
+.col-2x6 {
+  width: calc(100% / 6 * 2);
+}
+.col-3x6 {
+  width: calc(100% / 6 * 3);
+}
+.col-4x6 {
+  width: calc(100% / 6 * 4);
+}
+.col-5x6 {
+  width: calc(100% / 6 * 5);
+}
+.col-6x6 {
+  width: 100%;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.padding-tb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
