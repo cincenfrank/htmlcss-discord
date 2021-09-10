@@ -3,13 +3,21 @@
   margin: 0 auto;
 }
 
+.row {
+  position: relative;
+}
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.col {
+/* .col {
+  float: left;
+} */
+
+[class*="col-"] {
   float: left;
 }
 
@@ -42,10 +50,15 @@
   vertical-align: middle;
 }
 
-.centered {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.hz-centered {
+  left: 50%;
+  position: relative;
+  transform: translate(-50%);
+}
+.vt-centered {
+  top: 50%;
+  position: relative;
+  transform: translate(0% -50%);
 }
 
 .padding-tb-20 {

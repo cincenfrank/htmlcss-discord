@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
   /* temporary parameter */
   border: 1px solid black;
 }
@@ -14,31 +15,12 @@
   background-repeat: no-repeat;
 }
 
-/* ELEMENTS */
-
-.header__logo {
-  height: 28px;
-  max-width: 100%;
-}
-
-.header__list {
+.list {
   list-style: none;
   text-align: center;
   /* display: inline-block; */
 }
-
-.header__list__item {
-  display: inline-block;
-}
-
-.header__list__item__link {
-  padding: 16px 20px;
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-}
-
-.header__button {
+.button {
   font-size: 16px;
   display: inline-block;
   padding: 18px 28px;
@@ -47,36 +29,84 @@
   background-color: white;
   text-decoration: none;
 }
+
+.main-title {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.paragraph {
+  padding: 20px 0;
+  text-align: center;
+}
+/* ELEMENTS */
+.header__logo {
+  display: inline-block;
+}
+.header__logo__img {
+  /* height: 28px; */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.list__item {
+  display: inline-block;
+}
+
+.list__item__link {
+  padding: 16px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
 .header__section {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.header__section__title {
-  padding: 20px 0;
+/* .main__block__section {
+  display: inline-block;
+} */
+
+.main__block__section__title {
   text-align: center;
 }
-.header__section__paragraph {
-  padding: 20px 0;
+.main__block__section__paragraph {
   text-align: center;
+}
+
+.main__block__figure__image {
+  width: 100%;
+  object-fit: cover;
+  /* display: inline-block; */
 }
 
 /* MODIFIERS */
 
-.header__button--dense {
+.button--dense {
   font-size: 9px;
   padding: 11px;
 }
 
-.header__button--black {
+.button--black {
   background-color: #23272a;
   color: white;
 }
 
-.header__section__title--white {
+.main-title--white {
   color: white;
 }
 
-.header__section__paragraph--white {
+.paragraph--white {
   color: white;
+}
+
+.main__block__section {
+  vertical-align: middle;
+}
+.main__block__figure--right {
+  float: right;
 }
