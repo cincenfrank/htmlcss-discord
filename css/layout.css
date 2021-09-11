@@ -3,17 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Heebo", sans-serif;
-  /* temporary parameter */
-  /* border: 1px solid black; */
-}
-
-.row {
-  /* position: relative; */
 }
 
 main > .main-block:nth-child(even) {
   background-color: #f6f6f6;
-  /* background-color: black; */
 }
 
 .row::after {
@@ -21,10 +14,6 @@ main > .main-block:nth-child(even) {
   clear: both;
   display: table;
 }
-
-/* .col {
-  float: left;
-} */
 
 [class*="col-"] {
   float: left;
