@@ -10,10 +10,6 @@
   /* border: 1px solid black; */
 }
 
-main > .main-block:nth-child(even) {
-  background-color: #f6f6f6;
-}
-
 .margin-lr-20px {
   margin-left: 20px;
   margin-right: 20px;
@@ -266,6 +262,39 @@ main > .main-block:nth-child(even) {
 .button--purple:hover {
   color: white;
   background-color: #7983f5;
+}
+
+.main-block--bg-alternate {
+  background-color: #f6f6f6;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.main-block--bg-alternate::before {
+  content: "";
+  background-image: url("../img/wave.svg");
+  height: 150px;
+  width: 100%;
+  background-size: contain;
+  background-color: white;
+  display: block;
+}
+.main-block--bg-alternate:not(.main-block:last-child)::after {
+  content: "";
+  background-image: url("../img/wave.svg");
+  height: 150px;
+  width: 100%;
+  background-size: contain;
+  background-color: white;
+  display: block;
+  transform: rotate(180deg);
+}
+.main-block--bg-alternate:not(.main-block:last-child) section:first-child {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.main-block--bg-alternate.main-block:last-child {
+  padding-bottom: 100px;
 }
 
 .title--white {
